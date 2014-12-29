@@ -11,13 +11,28 @@
 
 // ----- rem ----- //
 
-// @function rem($size) {
-//     @return #{$size / $base-fontSize}rem;
-// }
+@function rem($font-size) {
+    $rem-size: $font-size / $base-fontSize;
+    @return #{$rem-size} rem;
+}
 
 // -------------------------------------
 // Mixins
 // -------------------------------------
+
+// ----- rem ----- //
+
+@mixin rem($font-size, $line-height: auto) {
+    font-size: $font-size;
+    font-size: ($font-size / $base-fontSize) * 1rem;
+
+    @if $line-height == auto {
+        line-height: ceil($font-size / $base-lineHeight) * ($base-lineHeight / $font-size);
+    }
+    @else {
+         line-height: $line-height;
+    }
+}
 
 // ----- Respond-to ----- //
 
