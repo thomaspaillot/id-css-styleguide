@@ -1,0 +1,70 @@
+// *************************************
+//
+// Modal
+//
+// *************************************
+
+// Modal
+//
+// Une fenêtre modale (à mettre à l'intérieur 
+// d'une div avec la classe modal pour avoir un
+// arrière plan légèrement assombrie).
+//
+// default - Default modal
+//
+// markup:
+// <div class="modal-content">
+//    <div class="modal-header">Titre</div>
+//    <div class="modal-body">Texte de la modal</div>
+//    <div class="modal-footer">
+//      <button class="button">Fermer</button> 
+//    </div>
+// </div>
+//
+// Styleguide 6.0
+
+.modal {
+  display: block;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index-modal;
+  background-color: fade-out(black, 0.8);
+}
+
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+.modal-content {
+  position: relative;
+  max-width: 460px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.modal-header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-body {
+  position: relative;
+  padding: 20px;
+  overflow: auto;
+}
+
+.modal-footer {
+  text-align: right;
+  padding: 20px;
+}

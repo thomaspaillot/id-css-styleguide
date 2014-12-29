@@ -678,9 +678,18 @@ a {
   .media:after {
     clear: both; }
 
-.media-img--rev {
+.media--rev > .media-img {
   float: right;
+  margin-right: 0;
   margin-left: 20px; }
+
+@media screen and (max-width: 640px) {
+  .media--responsive > .media-img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0; }
+ }
 
 .media-img {
   float: left;
@@ -787,3 +796,67 @@ a {
 
 .button--hard {
   border-radius: 0; }
+
+.button[disabled="disabled"], .button.is-disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: rgba(70, 70, 70, 0.15);
+  color: rgba(255, 255, 255, 0.6); }
+
+.pager {
+  text-align: center; }
+  .pager li {
+    display: inline;
+    margin-right: 8px; }
+    .pager li.is-active a {
+      background-color: #464646; }
+    .pager li a {
+      border-radius: 6px;
+      border: 2px solid #464646;
+      background-color: transparent;
+      display: inline-block;
+      height: 12px;
+      overflow: hidden;
+      text-indent: -9999px;
+      width: 12px; }
+
+.pager--inverse li.is-active a {
+  background-color: #FFF; }
+.pager--inverse li a {
+  border-color: #FFF; }
+
+.modal {
+  display: block;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.modal-content {
+  position: relative;
+  max-width: 460px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  outline: 0; }
+
+.modal-header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold; }
+
+.modal-body {
+  position: relative;
+  padding: 20px;
+  overflow: auto; }
+
+.modal-footer {
+  text-align: right;
+  padding: 20px; }

@@ -8,7 +8,9 @@
 //
 // Button styles used in the styleguide
 //
+//
 // default       - Default button
+// .is-disabled  - Disabled button
 // .button--hard - Hard button
 // .button--soft - Soft button
 //
@@ -63,4 +65,18 @@
 
 .button--hard {
 	border-radius: 0;
+}
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+.button {
+	&[disabled="disabled"],
+	&.is-disabled {
+	    pointer-events: none;
+	    cursor: default;
+	    background-color: fade-out($color-copy, 0.85);
+	    color: fade-out(white, 0.4);
+	}
 }

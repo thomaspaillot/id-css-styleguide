@@ -44,6 +44,12 @@ $ff-copy: sans-serif;
 $ff-heading: sans-serif;
 
 
+// ----- Breakpoints ----- //
+
+$bp-tablet: 640px;
+
+
 // ----- Z-index ----- //
 
-$zindex-tooltip: 1000;
+$z-index-tooltip: 1000;
+$z-index-modal: 2000;

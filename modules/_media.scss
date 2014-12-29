@@ -6,15 +6,17 @@
 
 // Media
 //
-// Place any image and text-like content side-by-side
+// Placer du contenu texte et une image
+// côte à côte (ou l'un au-dessus de l'autre)
+// en responsive.
 //
-// default - Default media
+// default            - Default media
+// .media--rev        - Reversed (right aligned) media
+// .media--responsive - Responsive media
 //
 // markup:
-// <div class="media">
-//   <a href="" class="media-img">
-//      <img src="http://placehold.it/140x100">
-//   </a>
+// <div class="media {$modifiers}">
+//   <img class="media-img" src="http://placehold.it/140x100">
 //   <p class="media-body">Lorem ipsum dolor sit amet…</p>
 // </div>
 //
@@ -29,9 +31,23 @@
 // Modifiers
 // -------------------------------------
 
-.media-img--rev {
-    float: right;
-    margin-left: $base-whitespace;
+.media--rev {
+    > .media-img {
+        float: right;
+        margin-right: 0;
+        margin-left: $base-whitespace;
+    }
+}
+
+@include respond-to($bp-tablet, max-width) {
+    .media--responsive {
+        > .media-img {
+            float: none;
+            margin-right: 0;
+            margin-bottom: $base-whitespace;
+            margin-left: 0;
+        }
+    }
 }
 
 // -------------------------------------
