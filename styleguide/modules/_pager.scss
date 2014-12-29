@@ -1,0 +1,55 @@
+// *************************************
+//
+// Pager
+//
+// *************************************
+
+// Pager
+//
+// Pager in the form of a list of bullet
+//
+// default - Default pager
+// .pager--inverse - Pager on dark background
+//
+// markup:
+// <ul class="pager {$modifiers}">
+//   <li><a href="">1</a></li>
+//	 <li class="is-active"><a href="">2</a></li>
+//	 <li><a href="">3</a></li>
+// </div>
+//
+// Styleguide 5.0
+
+.pager {
+	text-align: center;
+
+	li {
+		display: inline;
+	    margin-right: 8px;
+
+	    &.is-active a { background-color: $color-copy; }
+
+	    a {
+			border-radius: 6px;
+			border: 2px solid $color-copy;
+			background-color: transparent;
+			display: inline-block;
+			height: 12px;
+			overflow: hidden;
+			text-indent: -9999px;
+			width: 12px;
+		}
+	}		
+}
+
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.pager--inverse {
+	li {
+		&.is-active a { background-color: #FFF; }
+		a { border-color: #FFF; }
+	}
+}
