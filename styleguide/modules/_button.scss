@@ -1,3 +1,9 @@
+// *************************************
+//
+// Button
+//
+// *************************************
+
 // Buttons
 //
 // Button styles used in the styleguide
@@ -10,7 +16,7 @@
 // :focus - Focus button
 //
 // markup:
-// <button class="button {$modifiers}">Button text</button>
+// <button class="button {$modifiers}">Button</button>
 //
 // Styleguide 2.0
 
@@ -45,7 +51,7 @@
 
 	&:active, 
 	&:focus {
-		outline: none;
+		outline:none;
 	}
 }
 

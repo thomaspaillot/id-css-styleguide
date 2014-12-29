@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     styleguide = require('sc5-styleguide'),
     outputPath = 'styleguide';
-    source = 'src/assets/**/*.scss';
+    source = 'id-css-starter-kit/assets/**/*.scss';
 
 gulp.task('styleguide', function() {
   return gulp.src(source)
@@ -9,9 +9,9 @@ gulp.task('styleguide', function() {
       title: 'Intactile styleguide',
       server: true,
       rootPath: outputPath,
-      styleVariables: 'src/assets/core/_variables.scss',
+      styleVariables: 'id-css-starter-kit/assets/core/_variables.scss',
       sass: {
-        src: 'src/assets/style.scss'
+        src: 'id-css-starter-kit/assets/style.scss'
       }
     }))
     .pipe(gulp.dest(outputPath));
