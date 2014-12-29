@@ -5,24 +5,9 @@
 //
 // *************************************
 
-// -------------------------------------
-// @font-face
-// -------------------------------------
-
-// ...
-
-
-// -------------------------------------
-// Variables
-// -------------------------------------
-
-// ----- Base Colors ----- //
-
 // Colors
 //
 // This section describes base colors
-
-// Main colors
 //
 // $color-copy - Text color
 // $color-highlight - Highlight color
@@ -36,10 +21,10 @@
 
 $color-copy: #464646;
 $color-highlight: #3dc7a6;
-$color-soften: tint($color-highlight, 30%);
-$color-darken: shade($color-highlight, 30%);
+$color-soften: #77d8c1; // tint($color-highlight, 30%);
+$color-darken: #2B8B74; // shade($color-highlight, 30%);
+$color-tooltip: $color-copy;
 
-$tooltip-color: $color-copy;
 
 // ----- Base Content ----- //
 
@@ -52,10 +37,12 @@ $base-whitespace-s: 0.5 * $base-whitespace;
 $base-whitespace-l: 2 * $base-whitespace;
 $base-whitespace-xl: 4 * $base-whitespace;
 
+
 // ----- Fonts ----- //
 
 $ff-copy: sans-serif;
 $ff-heading: sans-serif;
+
 
 // ----- Z-index ----- //
 

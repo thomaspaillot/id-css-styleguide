@@ -5,7 +5,11 @@ a.pseudo-class-hover {
 
 a.pseudo-class-hover,
 a.pseudo-class-focus {
-  color: tint(#3dc7a6, 30%);
+  color: #77d8c1;
+}
+
+.media-body > .pseudo-class-last-child {
+  margin-bottom: 0;
 }
 
 .button.pseudo-class-hover {
@@ -15,7 +19,7 @@ a.pseudo-class-focus {
 .button.pseudo-class-hover,
 .button.pseudo-class-active,
 .button.pseudo-class-focus {
-  background-color: shade(#3dc7a6, 30%);
+  background-color: #2B8B74;
 }
 
 .button.pseudo-class-active,
