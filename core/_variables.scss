@@ -1,0 +1,60 @@
+// *************************************
+//
+// Variables
+// Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+// @font-face
+// -------------------------------------
+
+// ...
+
+
+// -------------------------------------
+// Variables
+// -------------------------------------
+
+// Colors
+//
+// This section describes base colors
+
+// Main colors
+//
+// $color-copy - Text color
+// $color-highlight - Highlight color
+// $color-soften - Highlight color softened
+// $color-darken - Highlight color darkened
+//
+// markup:
+// <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+//
+// Styleguide 1.0
+
+$color-copy: #464646;
+$color-highlight: #3dc7a6;
+$color-soften: tint($color-highlight, 30%);
+$color-darken: shade($color-highlight, 30%);
+
+$tooltip-color: $color-copy;
+
+// ----- Base Content ----- //
+
+$base-maxWidth: 62.5em; // ~1000px
+$base-fontSize: 16px;
+$base-lineHeight: 1.4;
+$base-whitespace: 20px;
+$base-whitespace-xs: 0.25 * $base-whitespace;
+$base-whitespace-s: 0.5 * $base-whitespace;
+$base-whitespace-l: 2 * $base-whitespace;
+$base-whitespace-xl: 4 * $base-whitespace;
+
+// ----- Fonts ----- //
+
+$ff-copy: sans-serif;
+$ff-heading: sans-serif;
+
+// ----- Z-index ----- //
+
+$zindex-tooltip: 1000;

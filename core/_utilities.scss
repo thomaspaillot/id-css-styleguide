@@ -1,0 +1,278 @@
+// *************************************
+//
+// Utilities
+// Global utilities
+//
+// *************************************
+
+// ----- Clearfix ----- //
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+// ----- Clear ----- //
+
+.clear { clear: both; }
+
+
+// ----- Hidden ----- //
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+// ----- Ellipsis ----- //
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// -------------------------------------
+// Display
+// -------------------------------------
+
+.d-b {
+  display: block;
+}
+.d-i {
+  display: inline;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-n {
+  display: none;
+}
+
+
+// -------------------------------------
+// Margins
+// -------------------------------------
+
+// ----- All ----- //
+
+.ws-xs { margin: $base-whitespace-xs; }
+.ws-s  { margin: $base-whitespace-s; }
+.ws    { margin: $base-whitespace; }
+.ws-l  { margin: $base-whitespace-l; }
+.ws-xl { margin: $base-whitespace-xl; }
+
+// ----- Top ----- //
+
+.ws-top-xs { margin-top: $base-whitespace-xs; }
+.ws-top-s  { margin-top: $base-whitespace-s; }
+.ws-top    { margin-top: $base-whitespace; }
+.ws-top-l  { margin-top: $base-whitespace-l; }
+.ws-top-xl { margin-top: $base-whitespace-xl; }
+
+// ----- Bottom ----- //
+
+.ws-bottom-xs { margin-bottom: $base-whitespace-xs; }
+.ws-bottom-s  { margin-bottom: $base-whitespace-s; }
+.ws-bottom    { margin-bottom: $base-whitespace; }
+.ws-bottom-l  { margin-bottom: $base-whitespace-l; }
+.ws-bottom-xl { margin-bottom: $base-whitespace-xl; }
+
+// ----- Vertical ----- //
+
+.ws-vertical-xs { margin-bottom: $base-whitespace-xs; margin-top: $base-whitespace-xs; }
+.ws-vertical-s  { margin-bottom: $base-whitespace-s; margin-top: $base-whitespace-s; }
+.ws-vertical    { margin-bottom: $base-whitespace; margin-top: $base-whitespace; }
+.ws-vertical-l  { margin-bottom: $base-whitespace-l; margin-top: $base-whitespace-l; }
+.ws-vertical-xl { margin-bottom: $base-whitespace-xl; margin-top: $base-whitespace-xl; }
+
+// ----- Left ----- //
+
+.ws-left-xs { margin-left: $base-whitespace-xs; }
+.ws-left-s  { margin-left: $base-whitespace-s; }
+.ws-left    { margin-left: $base-whitespace; }
+.ws-left-l  { margin-left: $base-whitespace-l; }
+.ws-left-xl { margin-left: $base-whitespace-xl; }
+
+// ----- Right ----- //
+
+.ws-right-xs { margin-right: $base-whitespace-xs; }
+.ws-right-s  { margin-right: $base-whitespace-s; }
+.ws-right    { margin-right: $base-whitespace; }
+.ws-right-l  { margin-right: $base-whitespace-l; }
+.ws-right-xl { margin-right: $base-whitespace-xl; }
+
+// ----- Center ----- //
+
+.ws-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// -------------------------------------
+// Padding
+// -------------------------------------
+
+// ----- All ----- //
+
+.pad-xs { padding: $base-whitespace-xs; }
+.pad-s  { padding: $base-whitespace-s; }
+.pad    { padding: $base-whitespace; }
+.pad-l  { padding: $base-whitespace-l; }
+.pad-xl { padding: $base-whitespace-xl; }
+
+// ----- Top ----- //
+
+.pad-top-xs { padding-top: $base-whitespace-xs; }
+.pad-top-s  { padding-top: $base-whitespace-s; }
+.pad-top    { padding-top: $base-whitespace; }
+.pad-top-l  { padding-top: $base-whitespace-l; }
+.pad-top-xl { padding-top: $base-whitespace-xl; }
+
+// ----- Bottom ----- //
+
+.pad-bottom-xs { padding-bottom: $base-whitespace-xs; }
+.pad-bottom-s  { padding-bottom: $base-whitespace-s; }
+.pad-bottom    { padding-bottom: $base-whitespace; }
+.pad-bottom-l  { padding-bottom: $base-whitespace-l; }
+.pad-bottom-xl { padding-bottom: $base-whitespace-xl; }
+
+// ----- Vertical ----- //
+
+.pad-vertical-xs { padding-bottom: $base-whitespace-xs; padding-top: $base-whitespace-xs; }
+.pad-vertical-s  { padding-bottom: $base-whitespace-s; padding-top: $base-whitespace-s; }
+.pad-vertical    { padding-bottom: $base-whitespace; padding-top: $base-whitespace; }
+.pad-vertical-l  { padding-bottom: $base-whitespace-l; padding-top: $base-whitespace-l; }
+.pad-vertical-xl { padding-bottom: $base-whitespace-xl; padding-top: $base-whitespace-xl; }
+
+// ----- Left ----- //
+
+.pad-left-xs { padding-left: $base-whitespace-xs; }
+.pad-left-s  { padding-left: $base-whitespace-s; }
+.pad-left    { padding-left: $base-whitespace; }
+.pad-left-l  { padding-left: $base-whitespace-l; }
+.pad-left-xl { padding-left: $base-whitespace-xl; }
+
+// ----- Right ----- //
+
+.pad-right-xs { padding-right: $base-whitespace-xs; }
+.pad-right-s  { padding-right: $base-whitespace-s; }
+.pad-right    { padding-right: $base-whitespace; }
+.pad-right-l  { padding-right: $base-whitespace-l; }
+.pad-right-xl { padding-right: $base-whitespace-xl; }
+
+// ----- Horizontal ----- //
+
+.pad-horizontal-xs { padding-left: $base-whitespace-xs; padding-right: $base-whitespace-xs; }
+.pad-horizontal-s  { padding-left: $base-whitespace-s; padding-right: $base-whitespace-s; }
+.pad-horizontal    { padding-left: $base-whitespace; padding-right: $base-whitespace; }
+.pad-horizontal-l  { padding-left: $base-whitespace-l; padding-right: $base-whitespace-l; }
+.pad-horizontal-xl { padding-left: $base-whitespace-xl; padding-right: $base-whitespace-xl; }
+
+// -------------------------------------
+// Positioning
+// -------------------------------------
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.p-abs {
+  position: absolute;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.p-static {
+  position: static;
+}
+
+
+// -------------------------------------
+// Text
+// -------------------------------------
+
+// ----- Alignment ----- //
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right; 
+}
+
+.t-left {
+  text-align: left; 
+}
+
+// ----- Family ----- //
+
+.ff-base {
+  font-family: $ff-copy; 
+}
+
+.ff-heading {
+  font-family: $ff-heading; 
+}
+
+// ----- Size ----- //
+
+.t-s {
+  font-size: 14px; 
+}
+
+.t-xs {
+  font-size: 12px; 
+}
+
+// ----- Style ----- //
+
+.t-italic {
+  font-style: italic;
+}
+
+// ----- Transform ----- //
+
+.t-upper { 
+  text-transform: uppercase; 
+}
+
+// ----- Weight ----- //
+
+.t-regular {
+  font-weight: normal;
+}
+
+.t-bold {
+  font-weight: bold;
+}
+
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// ----- Pointable ----- //
+
+.is-pointable {
+  cursor: pointer;
+}
+
