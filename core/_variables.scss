@@ -9,10 +9,10 @@
 //
 // This section describes base colors
 //
-// $color-copy - Text color
-// $color-highlight - Highlight color
-// $color-soften - Highlight color softened
-// $color-darken - Highlight color darkened
+// $color-copy             - Text color
+// $color-highlight        - Highlight color
+// $color-highlight-soften - Highlight color softened
+// $color-highlight-darken - Highlight color darkened
 //
 // markup:
 // <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
@@ -21,10 +21,9 @@
 
 $color-copy: #464646;
 $color-highlight: #3dc7a6;
-$color-soften: #77d8c1; // tint($color-highlight, 30%);
-$color-darken: #2B8B74; // shade($color-highlight, 30%);
+$color-highlight-soften: #77d8c1; // tint($color-highlight, 30%);
+$color-highlight-darken: #2B8B74; // shade($color-highlight, 30%);
 $color-tooltip: $color-copy;
-
 
 // ----- Base Content ----- //
 
