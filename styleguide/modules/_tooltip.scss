@@ -2,16 +2,25 @@
 //
 // Tooltip
 //
-// -------------------------------------
-// Template
-// -------------------------------------
+// *************************************
+
+// Tooltip
 //
-// <div class="tooltip tooltip--top">
+// Place any image and text-like content side-by-side
+//
+// default          - Default tooltip
+// .tooltip--top    - Top tooltip
+// .tooltip--bottom - Bottom tooltip
+// .tooltip--left   - Left tooltip
+// .tooltip--right  - Right tooltip
+//
+// markup:
+// <div class="tooltip {$modifiers}">
 //   <div class="tooltip-content">Maecenas et diam quis augue…</div>
 //   <span class="tooltip-arrow"></span>
 // </div>
 //
-// *************************************
+// Styleguide 4.0
 
 .tooltip {
 	position: absolute;
@@ -36,7 +45,7 @@
 	    left: 50%;
 	    margin-left: -5px;
 	    border-width: 5px 5px 0;
-	    border-top-color: $tooltip-color;
+	    border-top-color: $color-tooltip;
 	}
 }
 
@@ -49,7 +58,7 @@
 	    left: 0;
 	    margin-top: -5px;
 	    border-width: 5px 5px 5px 0;
-	    border-right-color: $tooltip-color;
+	    border-right-color: $color-tooltip;
 	}
 }
 
@@ -62,7 +71,7 @@
 	    left: 50%;
 	    margin-left: -5px;
 	    border-width: 0 5px 5px;
-	    border-bottom-color: $tooltip-color;
+	    border-bottom-color: $color-tooltip;
 	}
 }
 
@@ -75,7 +84,7 @@
 	    right: 0;
 	    margin-top: -5px;
 	    border-width: 5px 0 5px 5px;
-	    border-left-color: $tooltip-color;
+	    border-left-color: $color-tooltip;
 	}
 }
 
@@ -90,7 +99,7 @@
 	color: #FFF;
 	text-align: center;
 	text-decoration: none;
-	background-color: $tooltip-color;
+	background-color: $color-tooltip;
 	border-radius: 3px;
 }
 

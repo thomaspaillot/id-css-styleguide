@@ -668,7 +668,31 @@ a {
   color: #3dc7a6;
   text-decoration: none; }
   a:hover, a:focus {
-    color: tint(#3dc7a6, 30%); }
+    color: #77d8c1; }
+
+.media {
+  display: block; }
+  .media:before, .media:after {
+    display: table;
+    content: " "; }
+  .media:after {
+    clear: both; }
+
+.media-img--rev {
+  float: right;
+  margin-left: 20px; }
+
+.media-img {
+  float: left;
+  margin-right: 20px; }
+  .media-img > img {
+    display: block; }
+
+.media-body {
+  overflow: hidden;
+  display: block; }
+  .media-body, .media-body > :last-child {
+    margin-bottom: 0; }
 
 .tooltip {
   position: absolute;
@@ -754,7 +778,7 @@ a {
   .button, .button:hover {
     text-decoration: none; }
   .button:hover, .button:active, .button:focus {
-    background-color: shade(#3dc7a6, 30%); }
+    background-color: #2B8B74; }
   .button:active, .button:focus {
     outline: none; }
 

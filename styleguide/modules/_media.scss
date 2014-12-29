@@ -1,13 +1,16 @@
 // *************************************
 //
 // Media
-// Place any image and text-like 
-// content side-by-side
 //
-// -------------------------------------
-// Template
-// -------------------------------------
+// *************************************
+
+// Media
 //
+// Place any image and text-like content side-by-side
+//
+// default - Default media
+//
+// markup:
 // <div class="media">
 //   <a href="" class="media-img">
 //      <img src="http://placehold.it/140x100">
@@ -15,9 +18,9 @@
 //   <p class="media-body">Lorem ipsum dolor sit amet…</p>
 // </div>
 //
-// *************************************
+// Styleguide 3.0
 
-%media {
+.media {
     display: block;
     @include clearfix;
 }
@@ -26,7 +29,7 @@
 // Modifiers
 // -------------------------------------
 
-%media-img--rev {
+.media-img--rev {
     float: right;
     margin-left: $base-whitespace;
 }
@@ -35,7 +38,7 @@
 // Submodules
 // -------------------------------------
 
-%media-img {
+.media-img {
     float: left;
     margin-right: $base-whitespace;
 
@@ -44,7 +47,7 @@
     }
 }
 
-%media-body {
+.media-body {
     overflow: hidden;
     display: block;
 
