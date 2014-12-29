@@ -7,6 +7,7 @@ gulp.task('styleguide', function() {
   return gulp.src(source)
     .pipe(styleguide({
       title: 'Intactile styleguide',
+      overviewPath: 'README.md',
       server: true,
       rootPath: outputPath,
       styleVariables: 'id-css-starter-kit/assets/core/_variables.scss',
