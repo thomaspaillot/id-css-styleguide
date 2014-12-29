@@ -12,17 +12,15 @@ a.pseudo-class-focus {
   margin-bottom: 0;
 }
 
-.button.pseudo-class-hover {
+.button.pseudo-class-hover,
+.button.pseudo-class-active,
+.button.pseudo-class-focus {
   text-decoration: none;
+  color: #fff;
 }
 
 .button.pseudo-class-hover,
 .button.pseudo-class-active,
 .button.pseudo-class-focus {
   background-color: #2B8B74;
-}
-
-.button.pseudo-class-active,
-.button.pseudo-class-focus {
-  outline: none;
 }
