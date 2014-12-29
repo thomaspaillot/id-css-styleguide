@@ -1,0 +1,24 @@
+a.pseudo-class-active,
+a.pseudo-class-hover {
+  outline: 0;
+}
+
+a.pseudo-class-hover,
+a.pseudo-class-focus {
+  color: tint(#3dc7a6, 30%);
+}
+
+.button.pseudo-class-hover {
+  text-decoration: none;
+}
+
+.button.pseudo-class-hover,
+.button.pseudo-class-active,
+.button.pseudo-class-focus {
+  background-color: shade(#3dc7a6, 30%);
+}
+
+.button.pseudo-class-active,
+.button.pseudo-class-focus {
+  outline: none;
+}

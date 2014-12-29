@@ -1,0 +1,104 @@
+// *************************************
+//
+// Tooltip
+//
+// -------------------------------------
+// Template
+// -------------------------------------
+//
+// <div class="tooltip tooltip--top">
+//   <div class="tooltip-content">Maecenas et diam quis augue…</div>
+//   <span class="tooltip-arrow"></span>
+// </div>
+//
+// *************************************
+
+.tooltip {
+	position: absolute;
+	z-index: $zindex-tooltip;
+	display: block;
+	visibility: visible;
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+.tooltip--top {
+	margin-top: -3px; 
+	padding: 5px 0;
+
+	.tooltip-arrow {
+	    bottom: 0;
+	    left: 50%;
+	    margin-left: -5px;
+	    border-width: 5px 5px 0;
+	    border-top-color: $tooltip-color;
+	}
+}
+
+.tooltip--right {
+	margin-left: 3px; 
+	padding: 0 5px;
+
+	 .tooltip-arrow {
+	    top: 50%;
+	    left: 0;
+	    margin-top: -5px;
+	    border-width: 5px 5px 5px 0;
+	    border-right-color: $tooltip-color;
+	}
+}
+
+.tooltip--bottom {
+	margin-top: 3px; 
+	padding: 5px 0;
+
+	.tooltip-arrow {
+	    top: 0;
+	    left: 50%;
+	    margin-left: -5px;
+	    border-width: 0 5px 5px;
+	    border-bottom-color: $tooltip-color;
+	}
+}
+
+.tooltip--left {
+	margin-left: -3px; 
+	padding: 0 5px;
+
+	.tooltip-arrow {
+	    top: 50%;
+	    right: 0;
+	    margin-top: -5px;
+	    border-width: 5px 0 5px 5px;
+	    border-left-color: $tooltip-color;
+	}
+}
+
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+.tooltip-content {
+	max-width: 200px;
+	padding: 3px 8px;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	background-color: $tooltip-color;
+	border-radius: 3px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+

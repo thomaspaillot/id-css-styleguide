@@ -1,0 +1,63 @@
+// Buttons
+//
+// Button styles used in the styleguide
+//
+// default - Default button
+// .button--soft - Soft button
+// .button--hard - Hard button
+// :hover - Hover button
+// :active - Active button
+// :focus - Focus button
+//
+// markup:
+// <button class="button {$modifiers}">Button text</button>
+//
+// Styleguide 2.0
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-family: inherit;
+	font-size: 100%;
+	cursor: pointer;
+	border: none;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 3;
+	padding-right: 1em;
+	padding-left: 1em;
+	border-radius: 3px;
+	background-color: $color-highlight;
+	color: #fff;
+
+	&, 
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:active, 
+	&:focus {
+		background-color: $color-darken;
+	}
+
+	&:active, 
+	&:focus {
+		outline: none;
+	}
+}
+
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+.button--soft {
+	border-radius: 200px;
+}
+
+.button--hard {
+	border-radius: 0;
+}

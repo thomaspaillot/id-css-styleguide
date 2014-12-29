@@ -1,0 +1,54 @@
+// *************************************
+//
+// Media
+// Place any image and text-like 
+// content side-by-side
+//
+// -------------------------------------
+// Template
+// -------------------------------------
+//
+// <div class="media">
+//   <a href="" class="media-img">
+//      <img src="http://placehold.it/140x100">
+//   </a>
+//   <p class="media-body">Lorem ipsum dolor sit amet…</p>
+// </div>
+//
+// *************************************
+
+%media {
+    display: block;
+    @include clearfix;
+}
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+%media-img--rev {
+    float: right;
+    margin-left: $base-whitespace;
+}
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+%media-img {
+    float: left;
+    margin-right: $base-whitespace;
+
+    > img {
+        display: block;
+    }
+}
+
+%media-body {
+    overflow: hidden;
+    display: block;
+
+    &, > :last-child {
+        margin-bottom: 0;
+    }
+}

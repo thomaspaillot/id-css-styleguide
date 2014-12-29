@@ -1,0 +1,16 @@
+{
+  "name": "intactile-styleguide",
+  "version": "0.1.0",
+  "description": "Styleguide for the intactile css starter kit",
+  "license": "MIT",
+  "author": {
+    "name": "intactile DESIGN"
+  },
+  "keywords": [
+    "styleguide"
+  ],
+  "devDependencies": {
+    "sc5-styleguide": "~0.2.0",
+    "gulp": "^3.8.10"
+  }
+}

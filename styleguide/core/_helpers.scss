@@ -1,0 +1,62 @@
+// *************************************
+//
+// Helpers
+// Functions, Mixins, Animations
+//
+// *************************************
+
+// -------------------------------------
+// Functions
+// -------------------------------------
+
+// ----- rem ----- //
+
+// @function rem($size) {
+//     @return #{$size / $base-fontSize}rem;
+// }
+
+// -------------------------------------
+// Mixins
+// -------------------------------------
+
+// ----- Respond-to ----- //
+
+@mixin respond-to($val, $query: min-width, $media: screen) {
+    @media #{$media} and ($query: $val) {
+        @content;
+    }
+}
+
+// ----- Clear fix ----- //
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// ----- Outer container ----- //
+
+@mixin outer-container {
+    max-width: $base-maxWidth;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include clearfix;
+}
+
+// ----- Color helpers ----- //
+
+@function tint($color, $percent) {
+    @return mix(white, $color, $percent);
+}
+
+@function shade($color, $percent) {
+    @return mix(black, $color, $percent);
+}

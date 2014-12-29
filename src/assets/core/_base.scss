@@ -1,0 +1,88 @@
+// *************************************
+//
+// Base
+// Base-level tags (body, p, etc.)
+//
+// *************************************
+
+html {
+    font-family: $ff-copy;
+    font-size: $base-fontSize;
+    line-height: $base-lineHeight;
+    color: $color-copy;
+}
+
+body {
+    font-size: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+// -------------------------------------
+// Block Content
+// -------------------------------------
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul, p {
+  margin-bottom: $base-whitespace;
+  margin-top: 0;
+}
+
+li {
+  margin-bottom: $base-whitespace-s;
+  margin-top: 0;
+}
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: $ff-heading;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: $base-whitespace;
+  margin-top: 0;
+}
+
+h1, .h1 {
+  font-size: 200%;
+}
+
+h2, .h2 {
+  font-size: 150%;
+}
+
+h3, .h3 {
+  font-size: 125%;
+}
+
+h4, .h4 {
+  font-size: 110%;
+}
+
+// -------------------------------------
+// Inline Content
+// -------------------------------------
+
+a {
+    color: $color-highlight;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+        color: $color-soften;
+    }
+}
+
