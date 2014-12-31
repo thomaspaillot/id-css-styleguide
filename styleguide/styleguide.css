@@ -319,6 +319,12 @@ table {
 td, th {
   padding: 0; }
 
+.color-highlight-soften {
+  background-color: #77d7c0; }
+
+.color-highlight-darken {
+  background-color: #2a8b74; }
+
 .clearfix:before, .clearfix:after {
   display: table;
   content: " "; }
@@ -681,7 +687,7 @@ a {
   color: #3dc7a6;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #77d8c1; }
+    color: #77d7c0; }
 
 .media {
   display: block; }
@@ -795,7 +801,7 @@ a {
     text-decoration: none;
     color: #fff; }
   .button:hover, .button:active, .button:focus {
-    background-color: #2B8B74; }
+    background-color: #2a8b74; }
 
 .button--soft {
   border-radius: 200px; }

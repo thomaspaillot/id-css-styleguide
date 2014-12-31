@@ -9,21 +9,52 @@
 //
 // This section describes base colors
 //
-// $color-copy             - Text color
-// $color-highlight        - Highlight color
-// $color-highlight-soften - Highlight color softened
-// $color-highlight-darken - Highlight color darkened
+// Styleguide 1.0
+
+// Main colors
+//
+// This section describes base colors
+//
+// $color-copy      - Text color
+// $color-highlight - Highlight color
 //
 // markup:
 // <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
 //
-// Styleguide 1.0
+// Styleguide 1.1
 
 $color-copy: #464646;
 $color-highlight: #3dc7a6;
-$color-highlight-soften: #77d8c1; // tint($color-highlight, 30%);
-$color-highlight-darken: #2B8B74; // shade($color-highlight, 30%);
 $color-tooltip: $color-copy;
+
+// Colors variations
+//
+// This section describes colors based on main colors
+//
+// .color-highlight-soften - Highlight color softened
+// .color-highlight-darken - Highlight color darkened
+//
+// markup:
+// <div class="styleguide-color {$modifiers}">${$modifiers}</div>
+//
+// Styleguide 1.1.1
+
+// ----- Color helpers ----- //
+
+@function tint($color, $percent) {
+    @return mix(white, $color, $percent);
+}
+
+@function shade($color, $percent) {
+    @return mix(black, $color, $percent);
+}
+
+$color-highlight-soften: tint($color-highlight, 30%);
+$color-highlight-darken: shade($color-highlight, 30%);
+
+.color-highlight-soften { background-color: $color-highlight-soften; }
+.color-highlight-darken { background-color: $color-highlight-darken; }
+
 
 // ----- Base Content ----- //
 
@@ -52,3 +83,4 @@ $bp-tablet: 640px;
 
 $z-index-tooltip: 1000;
 $z-index-modal: 2000;
+
