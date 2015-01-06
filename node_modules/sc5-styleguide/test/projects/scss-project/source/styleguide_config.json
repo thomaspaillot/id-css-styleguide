@@ -1,0 +1,8 @@
+{
+  "extraHead": [
+    "<!-- extraHead comment -->"
+  ],
+  "overviewPath": "test_overview.md",
+  "commonClass": ["custom-class-1", "custom-class-2"],
+  "styleVariables": "styles/_styleguide_variables.scss"
+}
