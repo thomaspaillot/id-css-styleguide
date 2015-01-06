@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <link rel="icon" href="assets/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/app.css">
-  <link rel="stylesheet" type="text/css" href="/styleguide_at_rules.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="styleguide_at_rules.css">
   <script>
     (function() {
       'use strict';
       var userStyleFiles = [
-          '/styleguide.css',
-          '/styleguide_pseudo_styles.css',
-          '/css/styleguide_helper_elements.css'
+          'styleguide.css',
+          'styleguide_pseudo_styles.css',
+          'css/styleguide_helper_elements.css'
         ],
         head = document.querySelector('head');
 
@@ -31,12 +31,12 @@
   </script>
   <title ng-bind="$root.pageTitle">Intactile styleguide</title>
   
-  <base href="/" />
+  <base href="http://thomaspaillot.github.io/id-css-styleguide/" />
 </head>
 <body class="sg">
   <div class="sg view-index" ui-view></div>
-  <script src="/js/vendor.js"></script>
-  <script src="/js/app.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+    <script src="socket.io/socket.io.js"></script>
 </body>
 </html>
