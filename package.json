@@ -14,8 +14,6 @@
     "gulp": "^3.8.10"
   },
   "scripts": {
-    "commit-built": "git add styleguide -A && git commit -m \"styleguide files at `date`\" -n > /dev/null 2>&1; exit 0",
-    "ghpages": "git subtree split --prefix styleguide/ -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
-    "deploy": "npm run commit-built && npm run ghpages"
+    "deploy": "git subtree push --prefix styleguide origin gh-pages"
   }
 }
